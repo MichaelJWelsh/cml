@@ -5,7 +5,7 @@ CML is a (fully C++ compatible) header-only C matrix library designed with a foc
 ## Usage
 CML can be used in either header-only mode or implementation mode. The header-only mode is used by default when included and allows including this header in other headers and does not contain the actual implementation. 
 
-The implementation mode requires the user to define the preprocessor macro 'CML_IMPLEMENTATION' in one .c/.cpp file before ```#includ```ing this file, e.g.:
+The implementation mode requires the user to define the preprocessor macro 'CML_IMPLEMENTATION' in one .c/.cpp file before ```#include```ing this file, e.g.:
  ```C		
 #define CML_IMPLEMENTATION
 #include "cml.h"
