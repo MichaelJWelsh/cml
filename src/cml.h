@@ -197,7 +197,7 @@ CML_API MATRIX* cml_new(size_t rows, size_t cols) {
     m->cols = cols;
     m->data = (double *) vec_new_cap(sizeof(double), rows * cols);
 
-    if (errno) {
+    if (m->data == NULL) {
         free(m);
         return NULL;
     } else {
